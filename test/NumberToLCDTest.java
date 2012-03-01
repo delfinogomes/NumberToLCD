@@ -9,7 +9,7 @@ public class NumberToLCDTest {
 		String one =	"   \n"
 				+	"  |\n"
 				+	"  |";
-		System.out.println(NumberToLCD.giveDiplay(1));
+		System.out.println(" 1 => \n"+ NumberToLCD.giveDiplay(1));
 		Assert.assertEquals(NumberToLCD.giveDiplay(1), one);
 		
 	}
@@ -19,7 +19,7 @@ public class NumberToLCDTest {
 		String two = 	" _ \n"
 					+	" _|\n"
 					+	"|_ ";
-		System.out.println(NumberToLCD.giveDiplay(2));
+		System.out.println(" 2 => \n"+NumberToLCD.giveDiplay(2));
 		Assert.assertEquals(NumberToLCD.giveDiplay(2), two);
 		
 	}
@@ -29,7 +29,7 @@ public class NumberToLCDTest {
 		String three = 	" _ \n"
 					+	" _|\n"
 					+	" _|";
-		System.out.println(NumberToLCD.giveDiplay(3));
+		System.out.println(" 3 => \n"+NumberToLCD.giveDiplay(3));
 		Assert.assertEquals(NumberToLCD.giveDiplay(3), three);
 		
 	}
@@ -40,11 +40,31 @@ public class NumberToLCDTest {
 		String eight = 	" _ \n"
 					+	"|_|\n"
 					+	"|_|";
-		System.out.println(NumberToLCD.giveDiplay(8));
+		System.out.println(" 8 => \n"+ NumberToLCD.giveDiplay(8));
 		Assert.assertEquals(NumberToLCD.giveDiplay(8), eight);
 		
 	}
 	
+	@Test
+	public void shoudReturnEighteenOnTheDisplay(){
+		String eighteen = 	"    _ \n"
+						+	"  ||_|\n"
+						+	"  ||_|";
+		System.out.println("18 => \n"+ NumberToLCD.giveDiplay(18));
+		Assert.assertEquals(NumberToLCD.giveDiplay(18), eighteen);
+		
+	}
+	
+	@Test
+	public void shoudReturnOneHundredThirtyEightOnTheDisplay(){
+		String oneHundredThirtyEight = 	"    _  _ \n"
+									+	"  | _||_|\n"
+									+	"  | _||_|";
+		System.out.println("138 => \n"+ NumberToLCD.giveDiplay(138));
+		Assert.assertEquals(NumberToLCD.giveDiplay(138), oneHundredThirtyEight);
+		
+	}
 
+	
 	
 }
