@@ -29,8 +29,19 @@ public class NumberToLCDTest {
 		String three = 	" _ \n"
 					+	" _|\n"
 					+	" _|";
-		System.out.println(" 3 => \n"+NumberToLCD.giveDiplay(3));
+		System.out.println(" 4 => \n"+NumberToLCD.giveDiplay(3));
 		Assert.assertEquals(NumberToLCD.giveDiplay(3), three);
+		
+	}
+
+
+	@Test
+	public void shoudReturnFourOnTheDisplay(){
+		String four = 	"   \n"
+					+	"|_|\n"
+					+	"  |";
+		System.out.println(" 4 => \n"+NumberToLCD.giveDiplay(4));
+		Assert.assertEquals(NumberToLCD.giveDiplay(4), four);
 		
 	}
 
@@ -64,6 +75,8 @@ public class NumberToLCDTest {
 		Assert.assertEquals(NumberToLCD.giveDiplay(138), oneHundredThirtyEight);
 		
 	}
+	
+	
 
 	
 	
